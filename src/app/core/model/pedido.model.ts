@@ -1,7 +1,11 @@
+import { Producto } from './producto.model';
+
 export interface Pedido {
-    id_pedido: number;
-    products: Pedido[];
-    nombre: string;
-    dni: number;
-    fecha: Date;
+    id?: number;
+    productos?: Pedido[];
+    nombre?: string;
+    dni?: string;
+    fecha?: Date;
+    descripcion?: string;
+    cant?: number;
 }
