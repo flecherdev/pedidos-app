@@ -8,10 +8,17 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 100%;
+        max-width: 65%;
     }
 }
 
 img {
     max-width: 100%;
 }
+
+// @media(min-width: 576px) {
+//     img {
+//         max-width: 50%;
+//     }
+// }
+
