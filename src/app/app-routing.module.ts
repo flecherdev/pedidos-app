@@ -10,6 +10,8 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'pedido', pathMatch: 'full' },
       { path: 'pedido', loadChildren: () => import('./pedido/pedido.module').then(m => m.PedidoModule) },
+      { path: 'administrador', loadChildren: () => import('./administrador/administrador.module').then(m => m.AdministradorModule) },
+
     ]
   }
 ];
