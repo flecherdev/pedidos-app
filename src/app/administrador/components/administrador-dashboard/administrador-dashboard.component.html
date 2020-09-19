@@ -1,0 +1,66 @@
+<mat-tab-group>
+    <mat-tab label="Pendientes">
+        <div class=" mat-elevation-z8">
+            <table mat-table [dataSource]="dataSource">
+          
+              <!-- Position Column -->
+              <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef> No. </th>
+                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+              </ng-container>
+          
+              <!-- Name Column -->
+              <ng-container matColumnDef="code">
+                <th mat-header-cell *matHeaderCellDef> Codigo </th>
+                <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="adress">
+                <th mat-header-cell *matHeaderCellDef> Adress </th>
+                <td mat-cell *matCellDef="let element"> {{element.adress}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Nombre </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef> Estado </th>
+                <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+              </ng-container>
+
+              <!-- Weight Column -->
+              <ng-container matColumnDef="details">
+                <th mat-header-cell *matHeaderCellDef> Detalle </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-raised-button color="primary">Detalles</button>    
+                </td>
+              </ng-container>
+          
+              <!-- Symbol Column -->
+              <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef> Acción  </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-raised-button color="primary">Aceptar</button>   
+                    <button mat-raised-button color="warn">Cancelar</button>     
+                </td>
+              </ng-container>
+          
+              <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+          </div>
+    </mat-tab>
+    <mat-tab label="Confirmados">
+
+    
+    </mat-tab>
+    <mat-tab label="Configuracion">
+        <mat-list role="list">
+            <mat-list-item role="listitem">Item 1</mat-list-item>
+            <mat-list-item role="listitem">Item 2</mat-list-item>
+            <mat-list-item role="listitem">Item 3</mat-list-item>
+          </mat-list>
+    </mat-tab>
+</mat-tab-group>

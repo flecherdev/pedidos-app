@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutComponent } from './layout/layout.component';
 import { SharedModule } from './shared/shared.module';
+import { PedidosComponent } from './adminsitrador/components/pedidos/pedidos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
+    PedidosComponent,
   ],
   imports: [
     BrowserModule,
