@@ -32,6 +32,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 8, code: 'SEP18-46', name: 'Mirta Legrand', adress:'Moreno', weight: 15.9994, status: 'Pendiende'},
   {position: 9, code: 'SEP18-47', name: 'Mirta Legrand', adress:'Caballito -CABA', weight: 18.9984, status: 'Pendiende'},
   {position: 10, code: 'SEP18-48', name: 'Mirta Legrand', adress:'Flores -CABA', weight: 20.1797, status: 'Pendiende'},
+  
 ];
 
 export interface PeriodicElement {

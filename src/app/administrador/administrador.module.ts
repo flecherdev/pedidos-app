@@ -6,6 +6,9 @@ import { AdministradorRoutingModule } from './administrador-routing.module';
 import { AdministradorDashboardComponent } from './components/administrador-dashboard/administrador-dashboard.component';
 import { MaterialModule } from '../material/material.module';
 
+import { SharedModule } from '../shared/shared.module';
+
+
 const routes: Routes = [
   {
     path: '',
@@ -16,6 +19,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [AdministradorDashboardComponent],
   imports: [
+    SharedModule,
     MaterialModule,
     CommonModule,
     AdministradorRoutingModule,
