@@ -6,10 +6,12 @@ import { MaterialModule } from '../material/material.module';
 import { PedidoFormComponent } from './components/pedido-form/pedido-form.component';
 
 import { SharedModule } from '../shared/shared.module';
+import { PedidoComponent } from './components/pedido/pedido.component';
+import { PedidosComponent } from './components/pedidos/pedidos.component';
 
 
 @NgModule({
-  declarations: [PedidoFormComponent],
+  declarations: [PedidoFormComponent, PedidoComponent, PedidosComponent],
   imports: [
     CommonModule,
     PedidoRoutingModule,
