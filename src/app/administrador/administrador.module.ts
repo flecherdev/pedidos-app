@@ -7,6 +7,9 @@ import { AdministradorDashboardComponent } from './components/administrador-dash
 import { MaterialModule } from '../material/material.module';
 
 import { SharedModule } from '../shared/shared.module';
+import { PedidosComponent } from './components/pedidos/pedidos.component';
+import { ProductosComponent } from './components/productos/productos.component';
+import { ConfiguracionComponent } from './components/configuracion/configuracion.component';
 
 
 const routes: Routes = [
@@ -17,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AdministradorDashboardComponent],
+  declarations: [AdministradorDashboardComponent, PedidosComponent, ProductosComponent, ConfiguracionComponent],
   imports: [
     SharedModule,
     MaterialModule,
