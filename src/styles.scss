@@ -11,7 +11,6 @@ body { margin: 0; font-family: 'Montserrat', sans-serif; }
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
-    margin: 50px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -33,7 +32,6 @@ body { margin: 0; font-family: 'Montserrat', sans-serif; }
 
 @media(min-width: 576px) {
     .container{
-        max-width: 1110px;
         padding-right: 16px;
         padding-left: 16px;
     }
