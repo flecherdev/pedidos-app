@@ -13,7 +13,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { MatPaginatorModule } from '@angular/material';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 @NgModule({
@@ -32,7 +36,12 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatSnackBarModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatTabsModule
+    MatTabsModule,
+    MatExpansionModule,
+    MatBadgeModule,
+    MatGridListModule,
+    MatPaginatorModule,
+    MatButtonToggleModule
   ],
   exports: [
     MatToolbarModule,
@@ -47,7 +56,12 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatSnackBarModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatTabsModule
+    MatTabsModule,
+    MatExpansionModule,
+    MatBadgeModule,
+    MatGridListModule,
+    MatPaginatorModule,
+    MatButtonToggleModule
   ]
 })
 export class MaterialModule { }
