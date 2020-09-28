@@ -18,6 +18,8 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatPaginatorModule } from '@angular/material';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatBadgeModule,
     MatGridListModule,
     MatPaginatorModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatDialogModule,
+    MatChipsModule
   ],
   exports: [
     MatToolbarModule,
@@ -61,7 +65,9 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatBadgeModule,
     MatGridListModule,
     MatPaginatorModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatDialogModule,
+    MatChipsModule
   ]
 })
 export class MaterialModule { }

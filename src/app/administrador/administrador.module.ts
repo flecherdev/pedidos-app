@@ -9,6 +9,8 @@ import { SharedModule } from '../shared/shared.module';
 import { PedidosComponent } from './components/pedidos/pedidos.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { ConfiguracionComponent } from './components/configuracion/configuracion.component';
+import { MisProductosComponent } from  './components/productos/mis-productos/mis-productos.component';
+import { DialogContentExampleDialog, NuevoProductoComponent } from './components/productos/nuevo-producto/nuevo-producto.component';
 
 
 
@@ -32,7 +34,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AdministradorDashboardComponent, PedidosComponent, ProductosComponent, ConfiguracionComponent],
+  declarations: [AdministradorDashboardComponent, PedidosComponent, ProductosComponent, ConfiguracionComponent, MisProductosComponent, NuevoProductoComponent , DialogContentExampleDialog],
+  entryComponents: [DialogContentExampleDialog],
   imports: [
     SharedModule,
     MaterialModule,

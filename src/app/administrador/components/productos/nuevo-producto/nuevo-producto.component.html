@@ -1,0 +1,53 @@
+<div class="example-container">
+    <h4>Formulario para agregar un nuevo producto.</h4>
+    <hr>
+    <mat-form-field appearance="fill">
+        <mat-label>Tipo de Producto</mat-label>
+        <mat-select>
+            <mat-option value="option">Fruta</mat-option>
+            <mat-option value="option">Verdura</mat-option>
+            <mat-option value="option">Bolson</mat-option>
+            <mat-option value="option">Otros</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <hr>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Descripcion</mat-label>
+        <textarea matInput></textarea>
+    </mat-form-field>
+
+    <hr>
+    <mat-form-field appearance="fill">
+        <mat-label>Importe x Kg</mat-label>
+        <input matInput type="number" class="example-right-align">
+        <span matPrefix>$&nbsp;</span>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Importe x Unidad</mat-label>
+        <input matInput type="number" class="example-right-align">
+        <span matPrefix>$&nbsp;</span>
+    </mat-form-field>
+    <hr>
+    <hr>
+    <div class="botones">
+        <button mat-flat-button style="background-color: darkslategrey">Cancelar</button>
+
+        <button mat-flat-button style="background-color: #399915;" (click)="openDialog()" >Guardar</button> 
+
+    </div>
+
+</div>
+
+
+
+
