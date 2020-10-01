@@ -1,0 +1,5 @@
+<div class="pendientes">
+    <button mat-flat-button *ngFor="let pedido of pendingOrders"  (click)="openDialog( pedido )">
+        <mat-card>{{pedido.adress}} </mat-card>
+    </button><br>
+</div>

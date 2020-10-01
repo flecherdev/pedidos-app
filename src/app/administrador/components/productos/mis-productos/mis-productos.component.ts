@@ -7,16 +7,12 @@ export interface UserData {
   id: string;
   name: string;
   amount: string;
-  color: string;
 }
 
 /** Constants used to fill up our data base. */
-const COLORS: string[] = [
-  'maroon', 'red', 'orange', 'yellow', 'olive', 'green', 'purple', 'fuchsia', 'lime', 'teal',
-  'aqua', 'blue', 'navy', 'black', 'gray'
-];
+
 const NAMES: string[] = [
-  'Banana', 'Manzana Verde', 'Pera', 'Kiwi', 'Naranja', 'Limon', 'Sandía', 'Uvas', 'Manzana Roja', 'Granada'
+  'Banana', 'Manzana Verde', 'Pera', 'Kiwi'
 ];
 
 @Component({
@@ -35,12 +31,10 @@ export class MisProductosComponent implements AfterViewInit {
   constructor() {
     
     // Create 100 users
-    const users = Array.from({length: 1000}, (_, k) => createNewUser(k + 1));
+    const users = Array.from({length: 10}, (_, k) => createNewUser(k + 1));
 
     // Assign the data to the data source for the table to render
     this.dataSource = new MatTableDataSource(users);
-
-    console.log ( users )
   }
 
   ngAfterViewInit() {
@@ -66,7 +60,6 @@ function createNewUser(id: number): UserData {
   return {
     id: id.toString(),
     name: name,
-    amount: Math.round(Math.random() * 100).toString(),
-    color: COLORS[Math.round(Math.random() * (COLORS.length - 1))]
+    amount: Math.round(Math.random() * 10).toString(),
   };
 }

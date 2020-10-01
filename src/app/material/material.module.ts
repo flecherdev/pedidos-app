@@ -20,6 +20,7 @@ import { MatPaginatorModule } from '@angular/material';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import {MatChipsModule} from '@angular/material/chips';
     MatPaginatorModule,
     MatButtonToggleModule,
     MatDialogModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSidenavModule
   ],
   exports: [
     MatToolbarModule,
@@ -67,7 +69,8 @@ import {MatChipsModule} from '@angular/material/chips';
     MatPaginatorModule,
     MatButtonToggleModule,
     MatDialogModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSidenavModule
   ]
 })
 export class MaterialModule { }

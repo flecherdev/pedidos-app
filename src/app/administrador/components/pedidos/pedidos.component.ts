@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , ViewChild } from '@angular/core';
+import {MatSidenav} from '@angular/material/sidenav';
+
 
 @Component({
   selector: 'app-pedidos',
@@ -7,56 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PedidosComponent implements OnInit {
 
+@ViewChild('sidenav',{static: false}) sidenav: MatSidenav;
+
   constructor() { }
 
   ngOnInit() {
 
   }
 
-  pendingOrdersColumn = ['position','code', 'name','adress','status', 'details', 'action'];
-  pendingOrders = PENDING_ORDERS;
+  close(reason: string) {
+    this.sidenav.close();
+  }
 
-  confirmedOrdersColumn = ['position','code', 'name','adress','status', 'details', 'action'];
-  confirmedOrders = CONFIRMED_ORDERS;
+
   
   
-}
-
-const PENDING_ORDERS: PedidoList[] = [
-  {position: 1, code: 'SEP18-40', name: 'Mirta Legrand', adress:'Longchamps',  status: 'Pendiende'},
-  {position: 2, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Monte Grande',  status: 'Pendiende'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'Pendiende'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'Pendiende'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'Pendiende'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'Pendiende'},
-  {position: 1, code: 'SEP18-40', name: 'Mirta Legrand', adress:'Longchamps',  status: 'Pendiende'},
-  {position: 2, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Monte Grande',  status: 'Pendiende'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'Pendiende'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'Pendiende'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'Pendiende'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'Pendiende'},
-];
-
-
-const CONFIRMED_ORDERS: PedidoList[] = [
-  {position: 1, code: 'SEP18-40', name: 'Mirta Legrand', adress:'Longchamps',  status: 'En preparacion'},
-  {position: 2, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Monte Grande',  status: 'En preparacion'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'En preparacion'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'En preparacion'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'En preparacion'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'En preparacion'},
-  {position: 1, code: 'SEP18-40', name: 'Mirta Legrand', adress:'Longchamps',  status: 'En preparacion'},
-  {position: 2, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Monte Grande',  status: 'En preparacion'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'En preparacion'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'En preparacion'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'En preparacion'},
-  {position: 3, code: 'SEP18-41', name: 'Mirta Legrand', adress:'Lanus',  status: 'En preparacion'},
-];
-
-export interface PedidoList {
-  code: string;
-  name: string;
-  adress: string;
-  position: number;
-  status: string;
 }

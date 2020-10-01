@@ -1,0 +1,48 @@
+<h1 mat-dialog-title>Confirmar pedido para: <strong> {{pedido.adress}}</strong></h1>
+
+<mat-dialog-content class="mat-typography">
+
+  <div id="dialog">
+    <mat-chip-list>
+      <mat-chip>{{pedido.code}}</mat-chip> <br>
+      <mat-chip>{{pedido.status}}</mat-chip>
+    </mat-chip-list>
+    <br>
+    <h3>Nombre: <strong>{{pedido.name}}</strong> </h3>
+    <h3>Contacto: <strong>11-6464-9453</strong> </h3>
+    <h3>Productos: <strong> 10 </strong> </h3>
+    <br>
+
+    <h3>Pedido: </h3>
+    <hr>
+    <mat-card>
+      <p>Bolson Tipo 1 x 1 Uni. <strong>$950</strong></p>
+    </mat-card>
+    <br>
+    <mat-card>
+      <p>Bolson Tipo 2 x 1 Uni.<strong>$950</strong></p> <hr>
+      <p>Descripcion: Maduritas</p>
+    </mat-card>
+    <br>
+    <mat-card>
+      <p>Manzana x 1 Kg <strong>$950</strong></p>
+    </mat-card>
+    <br>
+    <mat-card>
+      <p>Banana x 2 Uni. <strong>$950</strong></p>
+    </mat-card>
+    <hr>
+
+    <mat-dialog-actions align="end">
+      <h1>Total: <strong>$5000</strong></h1>
+    </mat-dialog-actions>
+
+  </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+
+  <button mat-button mat-dialog-close>Cancelar</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Aceptar</button>
+</mat-dialog-actions>

@@ -11,6 +11,8 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { ConfiguracionComponent } from './components/configuracion/configuracion.component';
 import { MisProductosComponent } from  './components/productos/mis-productos/mis-productos.component';
 import { DialogContentExampleDialog, NuevoProductoComponent } from './components/productos/nuevo-producto/nuevo-producto.component';
+import { DialogPedidoPendiente, PedidosPendientesComponent } from './components/pedidos/pedidos-pendientes/pedidos-pendientes.component';
+import { PedidosConfirmadosComponent } from './components/pedidos/pedidos-confirmados/pedidos-confirmados.component';
 
 
 
@@ -34,8 +36,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AdministradorDashboardComponent, PedidosComponent, ProductosComponent, ConfiguracionComponent, MisProductosComponent, NuevoProductoComponent , DialogContentExampleDialog],
-  entryComponents: [DialogContentExampleDialog],
+  declarations: [AdministradorDashboardComponent, PedidosComponent, ProductosComponent, ConfiguracionComponent, MisProductosComponent, NuevoProductoComponent , DialogContentExampleDialog, PedidosPendientesComponent, PedidosConfirmadosComponent, DialogPedidoPendiente],
+  entryComponents: [DialogContentExampleDialog,DialogPedidoPendiente],
   imports: [
     SharedModule,
     MaterialModule,

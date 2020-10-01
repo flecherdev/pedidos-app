@@ -1,0 +1,33 @@
+<mat-sidenav-container  class="example-container" (backdropClick)="close('')">
+
+  <mat-sidenav #sidenav  disableClose>
+
+            <nav>
+            <hr>
+                <a mat-button routerLink="/administrador/admin-pedidos" routerLinkActive="active" (click)="close('Pedidos')">
+                    <mat-icon>view_headline</mat-icon>
+                    Pedidos
+                </a><hr>
+                <a mat-button routerLink="/administrador/admin-productos" routerLinkActive="active" (click)="close('Productos')">
+                    <mat-icon>view_module</mat-icon>
+                    Productos
+                </a><hr>
+                <a mat-button routerLink="/administrador/admin-configuracion" routerLinkActive="active" (click)="close('Configuracion')">
+                    <mat-icon>build_circle</mat-icon>
+                    Configuracion
+                </a>
+            </nav>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <h1 style="margin: 13px;" (click)="sidenav.open()"> {{title}} </h1>
+    <hr>    
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
