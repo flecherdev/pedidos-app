@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PedidoFormComponent } from './pedido-form.component';
 
@@ -6,7 +6,7 @@ describe('PedidoFormComponent', () => {
   let component: PedidoFormComponent;
   let fixture: ComponentFixture<PedidoFormComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ PedidoFormComponent ]
     })
